@@ -12,7 +12,7 @@ const toastBody = toast.querySelector('.toast-body');
 const name = document.getElementById('name').addEventListener('keydown', handleKey)
 const rut = document.getElementById('rut').addEventListener('keydown', handleKey)
 
-function handleKey (e) {e.key == 'Enter' && handleRegisterReader()}
+function handleKey (e) {e.key == 'Enter' && handleRegisterReader() }
 
 // Functions
 function handleRegisterReader() {
@@ -44,7 +44,7 @@ function handleSuccessRegistration() {
 
 function handleRegistrationError() {
   toastHeader.className = 'toast-header text-white bg-danger'
-  toastBody.innerHTML = '!! Registro fallido, compruebe los datos !!'
+  toastBody.innerHTML = '!! Registro fallido, compruebe los datos o si ya se encuentra registrado !!'
 
   registrationToast.show()
 }
