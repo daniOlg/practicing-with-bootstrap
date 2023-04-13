@@ -52,14 +52,16 @@
         <div class="card-header text-center">
           <h4>Inscribir lector</h4>
         </div>
-        <div class="card-body">
-          <input class="form-control" type="text" name="name" id="name" placeholder="Nombre completo">
-        </div>
-
-        <div class="card-body">
-          <input class="form-control" type="text" name="rut" id="rut" placeholder="Rut ejemplo: 203457534">
-        </div>
-        <button onclick="handleRegisterReader()" class="btn btn-primary m-3">Inscribir</button>
+        <form class="d-flex flex-column align-items-stretch">
+          <div class="card-body">
+            <input class="form-control" type="text" name="name" id="name" placeholder="Nombre completo" required>
+          </div>
+  
+          <div class="card-body">
+            <input class="form-control" type="text" name="rut" id="rut" placeholder="Rut ejemplo: 203457534" required>
+          </div>
+          <button type="submit" onclick="handleRegisterReader()" class="btn btn-primary m-3">Inscribir</button>
+        </form>
         <div class="p-3">
           Luego de inscribir a un lector puede <a href="./request-book.html">solicitar un libro</a>
         </div>
