@@ -77,24 +77,24 @@
               <fieldset disabled>
                 <div class="mb-3">
                   <label for="bookIdentifier" class="form-label">Identificador del libro:</label>
-                  <input type="text" id="bookIdentifier" class="form-control" placeholder="#identifier">
+                  <input type="text" id="bookIdentifier" class="form-control" placeholder="#identifier" required>
                 </div>
 
                 <div class="mb-3">
                   <label for="bookTitle" class="form-label">Nombre del libro:</label>
-                  <input type="text" id="bookTitle" class="form-control" placeholder="My book name">
+                  <input type="text" id="bookTitle" class="form-control" placeholder="My book name" required>
                 </div>
               </fieldset>
               <div class="mb-3">
                 <label for="requestPeople" class="form-label">Persona que solicita el libro</label>
-                <select id="requestPeople" class="form-select">
+                <select id="requestPeople" class="form-select" required>
                   <option>Opcion uno</option>
                 </select>
               </div>
               
               <div class="mb-3">
                 <label for="bookReturnDate" class="form-label">Fecha de entrega:</label>
-                <input type="date" id="bookReturnDate" class="form-control">
+                <input type="date" id="bookReturnDate" class="form-control" required>
               </div>
             </div>
             <div class="modal-footer">
